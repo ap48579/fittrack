@@ -2,3 +2,10 @@
 .env.local
 node_modules/
 .vercel
+
+# ML training artifacts (datasets, checkpoints) -- large, not source code
+data/
+checkpoints/
+notebooks/data/
+notebooks/checkpoints/
+**/.ipynb_checkpoints/

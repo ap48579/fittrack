@@ -1,0 +1,24 @@
+# conda create -n fittrack-vlm python=3.10
+# conda activate fittrack-vlm
+# pip install -r notebooks/requirements.txt
+#
+# bitsandbytes (4-bit QLoRA) needs a Linux + CUDA GPU -- this is meant for
+# the Colab runtime used in calories_estimator.ipynb and label_reader.ipynb,
+# not local macOS dev.
+
+torch
+transformers>=4.45
+accelerate
+peft
+bitsandbytes
+trl
+qwen-vl-utils
+datasets
+pillow
+huggingface_hub
+pandas
+requests
+rapidfuzz
+jupyter
+ipykernel
+ipywidgets

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitTrack — Progress</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>FitTrack</h1>
+    <button id="logout-btn" class="icon-btn">Log out</button>
+  </header>
+  <nav class="tabs">
+    <a href="index.html">Today</a>
+    <a href="weekly.html">This week</a>
+    <a href="food.html">Log food</a>
+    <a href="progress.html">Progress</a>
+    <a href="summary.html">Recaps</a>
+  </nav>
+
+  <div class="container">
+    <div class="stat-row">
+      <div class="stat">
+        <div class="value" id="streak-count">0</div>
+        <div class="label">Day streak</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Daily task completion (last 30 days)</h2>
+      <canvas id="completion-chart" height="180"></canvas>
+    </div>
+
+    <div class="card">
+      <h2>Calories logged (last 30 days)</h2>
+      <canvas id="calorie-chart" height="180"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/progress.js"></script>
+</body>
+</html>

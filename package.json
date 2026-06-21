@@ -1,0 +1,9 @@
+{
+  "name": "fittrack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal productivity + food/calorie tracker. Static frontend + Vercel serverless functions. Zero npm dependencies on purpose.",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitTrack — Log in</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="login-box card">
+    <h2>FitTrack</h2>
+    <p class="muted">Sign in with a magic link — no password to remember.</p>
+    <form id="login-form">
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="you@example.com" />
+      <div style="margin-top: 16px;">
+        <button type="submit" class="btn">Send magic link</button>
+      </div>
+      <p class="status-msg" id="status"></p>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
